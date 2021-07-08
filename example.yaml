@@ -11,7 +11,7 @@
       ssh_key_name: foobar
       volumes:
         - device: /dev/xvda
-          size_gb: 10
+          size_gb: 35
           type: ext4
           mount: /
         - device: /dev/xvdf
