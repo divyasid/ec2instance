@@ -125,7 +125,4 @@ if __name__ == "__main__":
     hostName = getHostname(instanceId)
     print('instance public dns name: ', hostName)
     
-    # python ssh library to perfrom ebs volue to xfs filesystem
-    # or do manually
-    # ssh -i <sshkeyfile> ec2-user@<hostanme> 'command'
-    
+
