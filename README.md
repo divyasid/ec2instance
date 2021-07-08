@@ -2,17 +2,17 @@
 Using python’s Boto3 to read a YAML configuration and deploy a AWS EC2 instance with 2 volumes and 2 users.
 
 # To Run: 
-pip install boto3
-pip install PyYAML
-In yaml file add in value for ssh_key_name to be able to ssh into the instance
-Run python launch_ec2.py to create ec2 instance
-Create security group to allow any ssh user to log into instance
-Users not fully tested cloud.init script
-Making a file System via ssh command: sudo mkfs -t xfs /dev/xvdf
-Create Directory: sudo mkdir /data
-Mount the file system: sudo mount /dev/xvdf/data
-Ssh command: ssh -i ~/.ssh/{ssh_key_name corresponding private key} ec2-user@{hostName}
-Users script is not fully tested; but found the specified solution from research
+1. pip install boto3
+2. pip install PyYAML
+3. In yaml file add in value for ssh_key_name to be able to ssh into the instance
+4. Run python launch_ec2.py to create ec2 instance
+5. Create security group to allow any ssh user to log into instance
+6. Users not fully tested cloud.init script
+7. Making a file System via ssh command: sudo mkfs -t xfs /dev/xvdf
+8. Create Directory: sudo mkdir /data
+9. Mount the file system: sudo mount /dev/xvdf/data
+10. Ssh command: ssh -i ~/.ssh/{ssh_key_name corresponding private key} ec2-user@{hostName}
+11. Users script is not fully tested; but found the specified solution from research
 
 # Notes/Challenges:
 Couldn't create 10Gb root volume, instead chose 35Gb because API rejected 10Gb
