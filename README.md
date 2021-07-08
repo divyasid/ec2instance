@@ -15,8 +15,8 @@ Using python’s Boto3 to read a YAML configuration and deploy a AWS EC2 instanc
 11. Users script is not fully tested; but found the specified solution from research
 
 # Notes/Challenges:
-Couldn't create 10Gb root volume, instead chose 35Gb because API rejected 10Gb
-Limited error checking, for example no ami id, or couldn't create the instance, will just return
+1. Couldn't create 10Gb root volume, instead chose 35Gb because API rejected 10Gb
+2. Limited error checking, for example no ami id, or couldn't create the instance, will just return
 
 # Method Descriptions:
 1. getYamlConfig(): Read in yaml file
