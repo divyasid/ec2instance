@@ -1,4 +1,5 @@
-# Goal: Using python’s Boto3 to read a YAML configuration and deploy a AWS EC2 instance with 2 volumes and 2 users.
+# Goal: 
+Using python’s Boto3 to read a YAML configuration and deploy a AWS EC2 instance with 2 volumes and 2 users.
 
 # To Run: 
 pip install boto3
